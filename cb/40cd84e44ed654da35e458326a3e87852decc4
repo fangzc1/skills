@@ -1,0 +1,52 @@
+.gitignore
+  h_51bd2d183e5a5b 1-6
+AGENTS.md
+  h_51bd2d183e5a5b 1
+"skill 指南.md"
+  h_51bd2d183e5a5b 1-74
+skills/docs-agents/SKILL.md
+  h_51bd2d183e5a5b 1-74
+skills/docs-api/SKILL.md
+  h_51bd2d183e5a5b 1-56
+skills/docs-architecture/SKILL.md
+  h_51bd2d183e5a5b 1-37
+skills/docs-checks/SKILL.md
+  h_51bd2d183e5a5b 1-38
+skills/docs-contributing/SKILL.md
+  h_51bd2d183e5a5b 1-49
+skills/docs-security/SKILL.md
+  h_51bd2d183e5a5b 1-48
+skills/docs-test/SKILL.md
+  h_51bd2d183e5a5b 1-42
+skills/docs-ui-design/SKILL.md
+  h_51bd2d183e5a5b 1-36
+skills/generate-project-rules/SKILL.md
+  h_51bd2d183e5a5b 1-115
+skills/meeting-summary/SKILL.md
+  h_51bd2d183e5a5b 1-183
+skills/meeting-summary/references/meeting-report-template.md
+  h_51bd2d183e5a5b 1-151
+skills/meeting-summary/scripts/meeting_processor.py
+  h_51bd2d183e5a5b 1-672
+tests/docs-skills/cases.json
+  h_51bd2d183e5a5b 1-12
+tests/docs-skills/results.json
+  h_51bd2d183e5a5b 1-20
+tests/docs-skills/run_evals.py
+  h_51bd2d183e5a5b 1-185
+tests/docs-skills/test_runner.py
+  h_51bd2d183e5a5b 1-71
+tests/docs-skills/评估说明.md
+  h_51bd2d183e5a5b 1-73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "cb40cd84e44ed654da35e458326a3e87852decc4",
+  "prompts": {},
+  "humans": {
+    "h_51bd2d183e5a5b": {
+      "author": "fangzc1 <fangzc1@lenovo.com>"
+    }
+  }
+}
