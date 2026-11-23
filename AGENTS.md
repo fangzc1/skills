@@ -1,0 +1,1 @@
+参考Matt Pocock<https://github.com/mattpocock/skills>这个作者的skill设计哲学

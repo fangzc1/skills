@@ -1,0 +1,20 @@
+{
+  "model": "gpt-6.1-sol",
+  "provider": "openai-codex",
+  "thinking": "medium",
+  "runs_per_variant_per_case": 1,
+  "mode": "工具禁用，证据内联，技能全文注入 system prompt；不测自动触发和检索",
+  "grading": "作者人工评审核心判据；不是独立盲评。保存指标及证据摘录，完整输出见本次会话工具结果。",
+  "results": [
+    {"skill":"agents","baseline_tokens":258,"skill_tokens":2036,"baseline_seconds":8.36,"skill_seconds":21.35,"baseline_core_pass":true,"skill_core_pass":true,"evidence":"with_skill：仅更新上述路由；不进行全库专题盘点。without_skill：其他专题路由不变。"},
+    {"skill":"api","baseline_tokens":877,"skill_tokens":2438,"baseline_seconds":23.5,"skill_seconds":25.14,"baseline_core_pass":true,"skill_core_pass":true,"evidence":"两组均写明202不等于完成、mock不能作为后端契约、traceId包装层级未知，检查/jobs及/reports。with_skill额外指出状态枚举不能证明状态流转顺序或终态不可变。"},
+    {"skill":"architecture","baseline_tokens":522,"skill_tokens":1306,"baseline_seconds":12.16,"skill_seconds":12.70,"baseline_core_pass":true,"skill_core_pass":true,"evidence":"两组均拒绝无依据的必须与PostgreSQL结论。with_skill将已核实链路收敛为控制器→payments队列；without_skill建议外部数据库虚线并标待核实。"},
+    {"skill":"checks","baseline_tokens":472,"skill_tokens":986,"baseline_seconds":16.07,"skill_seconds":8.48,"baseline_core_pass":true,"skill_core_pass":true,"evidence":"两组均包含src/触发、根目录、npm run typecheck、退出码0，不将发布或90%覆盖率设为本地门槛。"},
+    {"skill":"contributing","baseline_tokens":309,"skill_tokens":1556,"baseline_seconds":8.20,"skill_seconds":17.74,"baseline_core_pass":true,"skill_core_pass":true,"evidence":"两组均说明Node22、npm ci、Redis前置和CI自动发布，未编造审批政策。with_skill明确无需本地发布凭证。两组均将测试写成修改后的行动，是否构成新增义务需进一步边界测试。"},
+    {"skill":"security","baseline_tokens":557,"skill_tokens":1910,"baseline_seconds":16.50,"skill_seconds":19.04,"baseline_core_pass":true,"skill_core_pass":true,"evidence":"两组均限定/admin挂载证据，撤回全接口鉴权和生产TLS的无依据保证，并说明未核实不等于未启用或存在漏洞。"},
+    {"skill":"test","baseline_tokens":584,"skill_tokens":1728,"baseline_seconds":14.96,"skill_seconds":28.36,"baseline_core_pass":true,"skill_core_pass":true,"evidence":"两组均识别数据库fixture与TEST_DATABASE_URL，标记未运行，不补过滤语法。with_skill还提醒fixture写入清理未知，但追加了大量未提供信息。"},
+    {"skill":"ui-design","baseline_tokens":428,"skill_tokens":1333,"baseline_seconds":10.75,"skill_seconds":25.71,"baseline_core_pass":true,"skill_core_pass":true,"evidence":"两组均区分token规则、旧页硬编码与暗色模式未知。with_skill：当前正式要求针对新组件，尚不能据此判定该旧页违反存量页面要求。without_skill仅写与新组件规范不一致。"}
+  ],
+  "summary": {"successful_calls":16,"baseline_core_pass_cases":8,"skill_core_pass_cases":8,"baseline_total_tokens":4007,"skill_total_tokens":13293,"token_ratio":3.3174,"baseline_mean_seconds":13.8125,"skill_mean_seconds":19.815},
+  "limitations": ["没有修改前版本对照，不能证明此次重构优于旧版", "未重复运行，不具备统计显著性", "没有自动触发负例测试、真实仓库检索或工具操作测试", "不能验证禁止操作是模型主动遵循还是工具不可用导致", "没有跨模型测试"]
+}
