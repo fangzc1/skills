@@ -36,7 +36,7 @@ description: 创建、更新或核对 AGENTS.md，建立项目约束、文档读
 8 类专题文档统一使用仓库根目录下的标准文件名（**不放在 `docs/` 下，不使用时间戳命名**）。这是常驻维护入口，不套用一次性文档的默认命名规则：
 
 - 架构（`ARCHITECTURE.md`）：使用 `/docs-architecture` skill。
-- API 契约（`API.md`）：使用 `/docs-api` skill。
+- API 知识文档（`API.md`）：使用 `/docs-api` skill，提炼供模型长期使用的公共机制、例外与非显然业务语义，不以全量接口清单衡量覆盖。
 - 测试指南（`TEST.md`）：使用 `/docs-test` skill。
 - 项目安全说明（`SECURITY.md`）：使用 `/docs-security` skill。
 - 贡献指南（`CONTRIBUTING.md`）：使用 `/docs-contributing` skill。

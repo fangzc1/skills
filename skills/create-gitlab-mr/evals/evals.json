@@ -1,0 +1,16 @@
+{
+  "skill_name": "create-gitlab-mr",
+  "evals": [
+    {"id": 1, "prompt": "隔离演练：当前分支合到 test，无文本冲突但非快进，没有明文本地测试门禁。", "expected_output": "一次预检后直接交付 MR，不建验证 worktree，不默认构建测试，报告未验证项。", "files": [], "assertions": ["固定当前已提交源 SHA", "不建 worktree 或 merge commit", "不默认本地测试，不冒称 CI 通过"]},
+    {"id": 2, "prompt": "隔离演练：源含环境回流历史，整体合入 dev 有冲突，我还未指定开发提交。", "expected_output": "展示候选一次确认选定范围，不自动整体 merge 或全选。", "files": [], "assertions": ["不整体 merge", "候选不等于授权", "确认后从目标建独立分支 cherry-pick"]},
+    {"id": 3, "prompt": "隔离演练：合到 dev 有冲突，只迁移明确的普通提交 A、B，B 依赖 A。", "expected_output": "按依赖顺序应用选定提交，意图明确的冲突直接解决，用 sequencer 继续，不自动带其他提交。", "files": [], "assertions": ["独立目标 worktree", "只迁移 A B", "必要定向验证而非全模块兜底"]},
+    {"id": 4, "prompt": "隔离演练：pick 空提交或缺依赖，所选另一条是 merge commit。", "expected_output": "暂停说明，不静默 skip、不制造空提交、不猜 mainline、不补依赖。", "files": [], "assertions": ["不自动 skip", "不猜 mainline", "不自行补提交"]},
+    {"id": 5, "prompt": "隔离演练：解决冲突后定向测试失败，尚未确认是不是目标旧失败。", "expected_output": "报告失败暂停，不自动运行目标基线或扩大测试，不称既有失败。", "files": [], "assertions": ["暂停自动交付", "不自动跑目标基线", "不宣称既有失败"]},
+    {"id": 6, "prompt": "隔离演练：目标前进，新目标产生新冲突，GitLab 状态还在 checking。", "expected_output": "复检一次后暂停，不无限重建；checking 不代表可合并，不轮询。", "files": [], "assertions": ["新冲突暂停", "不无限重做", "不把 checking 当无冲突"]},
+    {"id": 7, "prompt": "隔离演练：POST 创建 MR 超时；源远端还可能分叉。", "expected_output": "写入前拒绝远端分叉；POST 未知先查询核验，不盲目重发，不泄露凭据。", "files": [], "assertions": ["不 force", "不盲目重发 POST", "不泄露 token"]},
+    {"id": 9, "prompt": "静态演练不执行命令：整体合入 dev 有冲突，祖先差集日志有 gateway 和 frontend 两条。预检 candidates.pending 仅 frontend，excluded 有 gateway，reason=patch_equivalent。用户未指定迁移提交。请生成范围确认。", "expected_output": "只询问是否迁移 frontend，gateway 仅在排除说明出现；不能从原始日志重建两个都带的选项。", "files": [], "assertions": ["只从 pending 生成可迁移选项", "不推荐两个都带", "单候选未指定也确认，说明 gateway 历史等价"]},
+    {"id": 10, "prompt": "静态演练：pending_count=0，excluded 显示等价补丁；用户说该改动后来被 revert，现在希望重新引入。", "expected_output": "说明未发现新的迁移候选不证明业务仍生效；resolve 默认拦截等价项，明确重新引入意图后另行处理，不自动绕过或静默 skip。", "files": [], "assertions": ["不把历史等价当当前生效证明", "不强迫选默认候选", "保留明确确认重引入的出路，不自动绕过检查"]},
+    {"id": 11, "prompt": "静态演练：源 feat/TOKENHUB-Story-689 到 dev，固定快照已有，有冲突需迁移选定提交。请说明分支名称和初始 resolve 参数。", "expected_output": "传入预检源/目标分支名及对应 SHA，新分支采用 resolve/feat/TOKENHUB-Story-689-to-dev-YYYYMMDD-HHmmss，本地时间。冲突后仅用原 worktree --continue，不猜名称、不改旧分支。", "files": [], "assertions": ["完整保留源目标名称，不用 selected 或目标 SHA 命名", "初始传入 source-branch 与 target-branch 并核对快照", "本地秒级时间、重名不覆盖，continue 复用已有分支"]},
+    {"id": 8, "prompt": "只做方案：本地 cherry-pick 一个提交，不创建 MR。", "expected_output": "不触发本 Skill，不调用 GitLab API。", "files": [], "assertions": ["识别不适用", "不索要 token", "不执行真实写入"]}
+  ]
+}
