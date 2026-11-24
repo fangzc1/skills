@@ -1,0 +1,168 @@
+AGENTS.md
+  s_8c39c6d23dd04a::t_42daefd108c9ca 1-5
+skills/create-gitlab-mr/scripts/gitlab_mr.py
+  s_a8e66362c582c8::t_9be1168659ac7a 247-263
+  s_a8e66362c582c8::t_d27dc507d33d89 650-652,671-672,683-684,722,740-742,750
+  s_64f1b9d2fdd8ea::t_1221c0c8d6ea6e 104,240,297,300-309,666-667,673-680,700,706-707,822-823,864-866,868
+  s_895fc51475d27c::t_de11e15d36d98d 120-135,211,440,453-543,572-578,858,924
+  s_a8e66362c582c8::t_66f14ffa8b82d6 616-638,648-649,653-665,668-670,681-682,685-692,698-699,701-705,708-721,723-739,743-749,751-821,824-834,836,838,844-849,859-863,867,869-873,914
+  s_a8e66362c582c8::t_86e7e3cd4fc4b8 839-842,895-903
+  s_a4ba7deffe38eb::t_b9465f95f97a75 602-615,639-647,693-697
+  s_895fc51475d27c::t_9a7dc3fdce0758 408-410,425,438,557,561,568-571,584
+  s_64f1b9d2fdd8ea::t_9510b9829a6199 101-103
+  s_895fc51475d27c::t_bac3f0d9025ce6 136-138,208-210
+  s_64f1b9d2fdd8ea::t_a985d0b28afb25 298-299
+  s_895fc51475d27c::t_0b02f9ac746add 411-413,422-424
+  s_895fc51475d27c::t_274981b8c27260 426-428,435-437
+  s_895fc51475d27c::t_6b476320344daa 439
+  s_895fc51475d27c::t_b6b1f4052b7655 441-443,450-452
+  s_895fc51475d27c::t_862808e3bfd593 544-546,554-556
+  s_895fc51475d27c::t_1b645461ef3c3e 558-560
+  s_895fc51475d27c::t_5f91048634b244 562-567
+  s_895fc51475d27c::t_031632db1decb1 579-583
+  s_a8e66362c582c8::t_43d0558d168807 835
+  s_a8e66362c582c8::t_8411292e6bfab0 837
+  s_a8e66362c582c8::t_8123365edf80aa 843
+  s_a8e66362c582c8::t_5e02422a4b5549 874-876,892-894
+  s_a8e66362c582c8::t_80367ea1683fcb 904-906,911-913
+  s_895fc51475d27c::t_f8d9fe74930911 925-927
+  s_64f1b9d2fdd8ea::t_7bef6d4521af74 1-100,105-119,139-207,212-239,241-246,264-296,310-407,414-421,429-434,444-449,547-553,585-601,850-857,877-891,907-910,915-923,928-931
+skills/create-gitlab-mr/evals/test_gitlab_mr.py
+  s_a8e66362c582c8::t_3f67cd7dd2afe0 789-793,795-803,805-825
+  s_895fc51475d27c::t_3cae0e882879e0 133-142,500-530,548,611,617,623,637,644,910-917
+  s_64f1b9d2fdd8ea::t_80274436cf35e7 760,772,794,804,889,896,905
+  s_895fc51475d27c::t_30f079489d893f 17,53,178-179,459-499,581-605
+  s_a8e66362c582c8::t_c3deffbf8455c2 323-324,748-758,761,765-770,773-778,780-788
+  s_a8e66362c582c8::t_4f1202aa1ca52f 259-294
+  s_64f1b9d2fdd8ea::t_40349ccf5c3d28 681-695,779
+  s_64f1b9d2fdd8ea::t_71b9d4c5864f57 84-96,661-680,762-764
+  s_a4ba7deffe38eb::t_39fa96dbaf23a9 297,306,343,356,842,844-856,873-888,890-895,897-900,904,906-908,921
+  s_a8e66362c582c8::t_b96bf30b615961 354,357,826-841,843,901-903,909,919,922
+  s_a8e66362c582c8::t_ad695af71360b9 759,771,973-974
+  s_a4ba7deffe38eb::t_faa88e727003f5 857-872
+  s_895fc51475d27c::t_c0e212e0226c7f 175-177
+  s_a8e66362c582c8::t_40229456cfa744 217,221,298,321,344,696-747,930
+  s_64f1b9d2fdd8ea::t_6b7c42b7ba8214 950
+  s_895fc51475d27c::t_d22c486f990417 182-186
+  s_895fc51475d27c::t_65ba7d6d3173ed 14-16
+  s_895fc51475d27c::t_90bd7dc013ecd5 18-20,50-52
+  s_895fc51475d27c::t_7f268d6cd26c43 143-145,172-174
+  s_895fc51475d27c::t_d1b9fad648c7d2 180-181
+  s_a8e66362c582c8::t_798af66b3a6f3d 218-220
+  s_a8e66362c582c8::t_d4266ee64ead15 222-224,256-258
+  s_a8e66362c582c8::t_c3bf2c60fec6af 322
+  s_a8e66362c582c8::t_496cdbd8e6403a 345-347,351-353
+  s_895fc51475d27c::t_4f741f79800728 531-533,545-547
+  s_895fc51475d27c::t_20b1e805d6da56 549-551,578-580
+  s_895fc51475d27c::t_83649c2e9ee022 606-610
+  s_895fc51475d27c::t_3c6912978568d2 612-616
+  s_895fc51475d27c::t_6dc596aa6dcc04 618-622
+  s_895fc51475d27c::t_dc14aa7a5a9f28 624-626,634-636
+  s_895fc51475d27c::t_076eff895a4053 638-643
+  s_a8e66362c582c8::t_2034f0be6befa3 923-925,927-929
+  s_a8e66362c582c8::t_48ad1f42b5f043 975-977
+  s_64f1b9d2fdd8ea::t_f9fce6414b3e36 1-13,21-49,54-83,97-132,146-171,187-216,225-255,295-296,299-305,307-320,325-342,348-350,355,358-458,534-544,552-577,627-633,645-660,918,920,926,931-949,951-972,978-995
+skills/create-gitlab-mr/SKILL.md
+  s_a8e66362c582c8::t_ad8c89812f235d 3-30,35-39,42,48,51-57,63,67-74,78
+  s_64f1b9d2fdd8ea::t_d7670480dc5da7 40-41,44-47,65
+  s_64f1b9d2fdd8ea::t_a67dbc961641fd 49,59-61,76
+  s_a4ba7deffe38eb::t_e404e51cbcddf4 31-34,50
+  s_a8e66362c582c8::t_4da0bcffb27a84 1-2
+  s_64f1b9d2fdd8ea::t_c3d825e34fb68e 43,58,62,64,66,75,77
+skills/docs-api/SKILL.md
+  s_ddc5fb88645a81::t_9f8f73dd2de429 54,68
+  s_ddc5fb88645a81::t_320007baa84dda 3,6,8,10,12,14,16,18,20,22-26,28,30,32,34,36,38,40,42,44,46,48-52,56-67,72,74,76
+  s_ddc5fb88645a81::t_3aebc21d639e47 53
+  s_ddc5fb88645a81::t_ef911aad0180b3 55
+skills/docs-api/设计方案.md
+  s_ddc5fb88645a81::t_4668f0a6968377 1-95,97-111,113-134,137-149
+  s_ddc5fb88645a81::t_513a8915ce7339 96,112,135-136
+skills/create-gitlab-mr/evals/evals.json
+  s_a8e66362c582c8::t_eb32847f356b61 4-10,14-16
+  s_64f1b9d2fdd8ea::t_89c3c3275187c6 13
+  s_a4ba7deffe38eb::t_51aedb80e2362f 11-12
+  s_a8e66362c582c8::t_202715292a6e0d 1-3
+tests/docs-skills/test_runner.py
+  s_ddc5fb88645a81::t_f1551995269ed4 34-49
+  s_ddc5fb88645a81::t_253816f8443a9a 6,23-33,64
+skills/create-gitlab-mr/references/认证与排错.md
+  s_64f1b9d2fdd8ea::t_6537ce8695e606 1-21
+skills/docs-agents/SKILL.md
+  s_ddc5fb88645a81::t_31b4f29d746727 39
+tests/docs-skills/评估说明.md
+  s_ddc5fb88645a81::t_e9ad8983e0bb66 15,42,44,86-87
+  s_ddc5fb88645a81::t_390200419d40c4 79-80
+  s_ddc5fb88645a81::t_11da9ab81556a4 81-85,88-90
+  s_ddc5fb88645a81::t_8dd329947cf511 45-50
+  s_ddc5fb88645a81::t_f39a0607f786cc 73-78
+skills/create-gitlab-mr/设计方案.md
+  s_64f1b9d2fdd8ea::t_e053f57adcd64b 1-2,4,6,8,10,12,15,17,19-20,26-28,30,32,34,36,38,40,42,44,46-47,50-51,53,55,57,59,61,63,65,74,76,78,80,82,84,86,88,90,92,99,101,103,105
+  s_64f1b9d2fdd8ea::t_2cd672a9dd4b40 3,5,7,9,11,13-14,16,18,21-25,29,31,33,35,37,39,41,43,45,48-49,52,54,56,58,60,62,64,66-73,75,77,79,81,83,85,87,89,91,93-98,100,102,104,106
+tests/docs-skills/cases.json
+  s_ddc5fb88645a81::t_79e1901372d3f0 13-14
+  s_ddc5fb88645a81::t_d08272c5b8fb67 10-12
+skills/create-gitlab-mr/使用说明.md
+  s_895fc51475d27c::t_fd27fff4a3bea6 22,24
+  s_a8e66362c582c8::t_766c6cd4503d99 8
+  s_64f1b9d2fdd8ea::t_4411181baabafd 3
+  s_a4ba7deffe38eb::t_07b76c6cc42ae2 1,5-7,9-21,23,25
+  s_64f1b9d2fdd8ea::t_c52c49d2491e1d 2,4
+skills/create-gitlab-mr/references/冲突处理.md
+  s_64f1b9d2fdd8ea::t_9b18761f290fad 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c1ee4488f834c6352226573f4d334d7314cbd824",
+  "prompts": {},
+  "sessions": {
+    "s_64f1b9d2fdd8ea": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a20c3e-bb0a-7012-b946-9b4791aba72f",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "fangzc1 <fangzc1@lenovo.com>"
+    },
+    "s_895fc51475d27c": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a2066d-7b91-731f-a52c-8f0aaee23d63",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "fangzc1 <fangzc1@lenovo.com>"
+    },
+    "s_8c39c6d23dd04a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a2066d-f4f5-778a-9244-d4abf6405a12",
+        "model": "deepseek-flash"
+      },
+      "human_author": "fangzc1 <fangzc1@lenovo.com>"
+    },
+    "s_a4ba7deffe38eb": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a20bb3-ea03-7012-b946-9b3b39db02a2",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "fangzc1 <fangzc1@lenovo.com>"
+    },
+    "s_a8e66362c582c8": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a20b47-bdbf-7012-b946-9b2b690c2a63",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "fangzc1 <fangzc1@lenovo.com>"
+    },
+    "s_ddc5fb88645a81": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a20c0b-b4d3-73c6-8c62-964e4a2729ef",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "fangzc1 <fangzc1@lenovo.com>"
+    }
+  }
+}
